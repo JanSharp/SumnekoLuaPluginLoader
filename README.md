@@ -1,7 +1,7 @@
 
 # Introduction
 
-This happy little plugin allows you to load multiple plugins for the sumneko.lua extension.
+This happy little plugin allows you to load multiple plugins for the [sumneko.lua](https://github.com/sumneko/lua-language-server) extension.
 
 # Usage
 
