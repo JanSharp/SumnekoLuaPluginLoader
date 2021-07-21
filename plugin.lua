@@ -24,10 +24,7 @@ else
   local fsu = require("fs-utility")
 
   ---@type Path
-  local plugin_path = fs.path(config.config.runtime.plugin)
-  if plugin_path:is_relative() then
-    plugin_path = fs.path(workspace.path) / plugin_path
-  end
+  local plugin_path = fs.path(workspace.getAbsolutePath(config.get('Lua.runtime.plugin')))
 
   ---@type Path
   local plugin_dir_path = plugin_path:parent_path()
