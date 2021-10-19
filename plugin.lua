@@ -39,7 +39,7 @@ else
   local plugins = {}
   cache.plugins = plugins
   ---@type Path
-  for sub_path in plugin_dir_path:list_directory() do
+  for sub_path in fs.pairs(plugin_dir_path) do
     if fs.is_directory(sub_path) then
       local sub_plugin_path = sub_path / "plugin.lua"
       -- seems to savely check for existance first
